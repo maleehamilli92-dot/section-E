@@ -1,0 +1,168 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;}
+
+
+.container{
+display: flex;
+flex-direction: column;
+border: px solid black;
+margin: 10px;
+padding: 10px;
+background-color: white;
+height: 100vh;
+/* color: black; */
+/* flex: 1; */
+} 
+
+.header{ display: flex;
+flex-direction: row;
+border: 1px solid black;
+border-radius: 5px;
+background-color: white;
+color: black;
+justify-content: space-between;
+align-items: center;}
+
+.search{ background-color: rgb(194, 178, 178);
+margin: 5px;
+padding: 5px;
+/* flex-direction:column; */
+width: 250px;
+border-radius: 25px;
+/* justify-content: flex-start;} */
+ }
+
+.icons{ background-color: rgb(204, 186, 186);
+margin: 10px;
+padding: 10px;
+border-radius: 5px;
+justify-self:flex-end;
+justify-items: right;
+} 
+
+.avatar{ background-color: blue;
+margin: 5px;
+padding:5px;
+border-radius: px;
+color: black;} 
+/*  
+.middle{ width: 45px;
+height: 150px;} */
+
+.content-area{ display: flex;
+flex-direction: row;
+gap: 10px;
+
+}
+
+.text{ 
+border: 2px solid black;
+margin: 3px;
+padding: 5px;
+/* width: 100px;
+flex: 1; */
+height: 45px;
+border-radius: 6px;} 
+
+.price-1{ 
+    color:rgb(51, 21, 51);
+} 
+
+.text{display: flex;
+border: 1px solid black;
+flex-direction: row;
+margin: 3px;
+height: 45px;
+/* flex: 1; */
+padding: 5px;} 
+ 
+.price-2{ color: green;} 
+
+.text{display: flex;
+border: 1px solid black;
+flex-direction: row;
+/* flex: 1; */
+height: 45px;
+margin: 3px;
+padding: 5px;} 
+
+.price-3{ color: rgb(180, 180, 35);} 
+
+.text{ display: flex;
+border: 3px solid black;
+/* flex: 1; */
+flex-direction: row;
+height: 45px;
+margin: 3px;
+padding: 5px;} 
+
+.price-4{ color: red;} 
+
+.sidebar{ display: flex;
+flex-direction:column;
+justify-content: space-between;
+flex: 0 0 150px ;
+border-radius: 20px;
+border: 2px solid black;
+background-color:black;
+color: white;
+flex: 2;
+margin: 5px;
+padding: 5px;
+width: 70px;
+min-height: 380px;} 
+
+.LOGO{ 
+    background-color: rgb(51, 49, 49);
+    color: white;
+    justify-content: space-between;
+} 
+
+.deshboard{ 
+    background-color: blue;
+    color: white;
+} 
+
+.orders{ background-color: rgb(51, 49, 49);
+    color: white;} 
+
+    .customers{ background-color: rgb(51, 49, 49);
+    color: white;} 
+
+.reports{  background-color: rgb(51, 49, 49);
+    color: white;} 
+
+.settings{ background-color: rgb(51, 49, 49);
+    color: white;} 
+
+.profile{ background-color: rgb(51, 49, 49);
+    color: white;} 
+ 
+
+.middle{ display: flex;
+flex-direction:row;
+}
+
+
+.content{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    color:black;
+}
+
+
+
+.aside{display: flex;
+flex-direction: column;
+background-color: white;
+flex: 1;
+color: black;
+border: 2px solid black;
+border-radius: 6px;
+margin: 10px;
+padding: 10px;}
