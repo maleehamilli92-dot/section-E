@@ -1,56 +1,87 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style900.css"/>
-    <title>lilli</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style900.css" />
 </head>
 <body>
-    <div class="container">
-    <div class="parent">
-    
-        <aside class="sidebar">
-    <div class="logo">LOGO</div>
-     <div>
-    <div class="deshboard"> deshboard</div>
-    <div class="orders">orders</div>
-    <div class="customers">customers</div>
-    <div class="reports">reports</div>
-    <div class="settings">settings</div> 
-</div>
-    <button class="profile">profile</button>
+  <div class="app-container">
+    <!-- Sidebar Section -->
+    <aside class="sidebar">
+      <div class="nav-top">
+        <div class="logo">LOGO</div>
+        <nav class="nav-links">
+          <a href="#" class="nav-item active">Dashboard</a>
+          <a href="#" class="nav-item">Orders</a>
+          <a href="#" class="nav-item">Customers</a>
+          <a href="#" class="nav-item">Reports</a>
+          <a href="#" class="nav-item">Settings</a>
+        </nav>
+      </div>
+      <div class="profile-btn">Profile</div>
     </aside>
 
-<div class="content-area">
-    <header class="header">
-    <div class="search"> SEARCH....</div>
-    <div>
-    <div class="icons">icons</div>
-    <div class="avatar">AVATAR</div>
-</div>
-</header>
-<div class="content-row">
-    <div class="left-content">
-        <div class="cards">
-   <div class="text"><h1>revenue</h1>
-        <div class="price-1">$48.2k</div>
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <!-- Topbar Header -->
+      <header class="topbar">
+        <input type="text" class="search-bar" placeholder="Search..." />
+        <div class="topbar-right">
+          <div class="icons-text">Icons</div>
+          <div class="avatar">Avatar</div>
         </div>
-        <div class="text"><h1>orders</h1>
-            <div class="price-2">1,204</div>
-        </div>
-        <div class="text"><h1>users</h1>
-            <div class="price-3">892</div>
-        </div>
-        <div class="text"><h1>refunds</h1>
-            <div class="price-4">23</div>
-        </div>                               
-        </div>                   
-       <main class="content"> chater box</main>
+      </header>
 
-<aside class="aside"> ASIDE</aside>
-</div>
-</div>
- </div>
+      <!-- Main Layout Grid Row -->
+      <div class="content-row">
+        <!-- Left Column (Stats + Chart Area) -->
+        <div class="left-column">
+          <div class="stats-row">
+            <div class="card">
+              <span class="card-title">Revenue</span>
+              <span class="card-value blue">$48.2k</span>
+            </div>
+            <div class="card">
+              <span class="card-title">Orders</span>
+              <span class="card-value green">1,204</span>
+            </div>
+            <div class="card">
+              <span class="card-title">Users</span>
+              <span class="card-value orange">892</span>
+            </div>
+            <div class="card">
+              <span class="card-title">Refunds</span>
+              <span class="card-value red">23</span>
+            </div>
+          </div>
+
+          <div class="chart-area">
+            CHART AREA<br />
+            <small>(flex-grow: 1)</small>
+          </div>
+        </div>
+
+        <!-- Right Column (Recent Activity) -->
+        <aside class="right-column">
+          <h3>Recent Activity</h3>
+          <div class="activity-list">
+            <div class="activity-item">Activity Item 1</div>
+            <div class="activity-item">Activity Item 2</div>
+            <div class="activity-item">
+              Activity Item 3<br />
+              <small class="red-text">order:</small>
+            </div>
+            <div class="activity-item">Activity Item 4</div>
+            <div class="activity-item">Activity Item 5</div>
+            <div class="activity-item">Activity Item 6</div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
+  

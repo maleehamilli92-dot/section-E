@@ -1,185 +1,219 @@
-*{box-sizing: border-box;
-margin: 0;
-padding: 0;}
-
-
-.container{
-display: flex;
-flex-direction:row;
-border: 2px solid black;
-border-radius: 5px;
-margin: 10px;
-padding: 10px;
-background-color: white;
-height: 100vh;
-width: 100%;
-} 
-
-.parent{ display: flex;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.header{ display: flex;
-flex-direction: row;
-border: 1px solid black;
-border-radius: 5px;
-background-color: white;
-color: black;
-justify-content: space-between;
-align-items: center;}
-
-.search{ background-color: rgb(194, 178, 178);
-margin: 5px;
-flex-direction: row;
-padding: 5px;
-/* flex-direction:column; */
-width: 250px;
-border-radius: 25px;
-/* justify-content: flex-start;} */
- }
-
-.icons{ background-color: rgb(204, 186, 186);
-margin: 10px;
-padding: 10px;
-border-radius: 5px;
-justify-self:flex-end;
-justify-items: right;
-} 
-
-.avatar{ background-color: blue;
-margin: 5px;
-padding:5px;
-border-radius: px;
-color: black;} 
-/*  
-.middle{ width: 45px;
-height: 150px;} */
-
-.content-area{ display: flex;
-flex-direction: column;
-gap: 10px;
-width: 55%;
+body {
+  background-color: #f4f5f7;
+  padding: 20px;
 }
 
-.left-content{ display: flex;
-flex-direction: column;
-flex: 1;} 
-
-
-.cards{ display: flex;
-flex-direction: row;}
-
-.text{ border: 2px solid black; 
-margin: 3px;
-padding: 5px;
-height: 45px;
-flex: 1;
-border-radius: 6px;} 
-
-.price-1{ 
-    color:rgb(51, 21, 51);
-} 
-
-.text{display: flex;
-border: 1px solid black;
-flex-direction: row;
-margin: 3px;
-height: 45px;
-/* flex: 1; */
-padding: 5px;} 
- 
-.price-2{ color: green;} 
-
-.text{display: flex;
-border: 1px solid black;
-flex-direction: row;
-/* flex: 1; */
-height: 45px;
-margin: 3px;
-padding: 5px;} 
-
-.price-3{ color: rgb(180, 180, 35);} 
-
-.text{ display: flex;
-border: 3px solid black;
-/* flex: 1; */
-flex-direction: row;
-height: 45px;
-margin: 3px;
-padding: 5px;
-} 
-
-.price-4{ color: red;} 
-
-
-.content{
-    display: flex;
-    border: 2px solid black;
-    border-radius: 15px;
-    margin: 10px;
-    flex: 1;
-    
-    padding: 10px;
-    background-color: white;
-    color:black;
-    height: 300px;
+.app-container {
+  display: flex;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  min-height: 700px;
 }
-.content-row{ display: flex;
-flex-direction: row;}
 
-.aside{display: flex;
-background-color: white;
-color: black;
-border: 2px solid black;
-border-radius: 6px;
-margin: 10px;
-padding: 10px;
-width: 30%;}
+/* Sidebar Styles */
+.sidebar {
+  width: 180px;
+  background-color: #1a2232;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.logo {
+  text-align: center;
+  border-radius: 6px;
+  background-color: #2a3447;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-.sidebar{ display: flex;
-flex-direction:column;
-justify-content: space-between;
-flex: 0 0 150px ;
-border-radius: 20px;
-border: 2px solid black;
-background-color:black;
-color: white;
-flex: 2;
-margin: 5px;
-padding: 5px;
-width: 90%;
-min-height: 380px;} 
+.nav-item {
+  color: #a0aec0;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+  background-color: #2a3447;
+}
 
-.LOGO{ 
-    background-color: rgb(51, 49, 49);
-    color: white;
-    justify-content: space-between;
-} 
+.nav-item.active {
+  background-color: #2563eb;
+  color: white;
+}
 
-.deshboard{ 
-    background-color: blue;
-    color: white;
-} 
+.profile-btn {
+  background-color: #2a3447;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
 
-.orders{ background-color: rgb(51, 49, 49);
-    color: white;} 
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-    .customers{ background-color: rgb(51, 49, 49);
-    color: white;} 
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
 
-.reports{  background-color: rgb(51, 49, 49);
-    color: white;} 
+.search-bar {
+  width: 50%;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  background-color: #edf2f7;
+  outline: none;
+}
 
-.settings{ background-color: rgb(51, 49, 49);
-    color: white;} 
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-.profile{ background-color: rgb(51, 49, 49);
-    color: white;} 
- 
+.icons-text {
+  background-color: #edf2f7;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #4a5568;
+}
 
+.avatar {
+  background-color: #2563eb;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 15px;
+  font-size: 12px;
+}
 
+/* Content Area Grid/Flex Setup */
+.content-row {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
 
+.left-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
+/* Cards Row */
+.stats-row {
+  display: flex;
+  gap: 12px;
+}
 
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 12px;
+}
 
+.card-title {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.card-value {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Value colors */
+.blue { color: #2563eb; }
+.green { color: #16a34a; }
+.orange { color: #d97706; }
+.red { color: #dc2626; }
+
+/* Chart Area */
+.chart-area {
+  flex: 1;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #94a3b8;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Right Column (Recent Activity) */
+.right-column {
+  flex: 1;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.right-column h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.activity-item {
+  background-color: #f3f4f6;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #374151;
+}
+
+.red-text {
+  color: #dc2626;
+  font-weight: bold;
+}
